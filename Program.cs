@@ -12,22 +12,21 @@ string image1 = Environment.CurrentDirectory + @"\Images\abstract\" + "timur-koz
 string image2 = Environment.CurrentDirectory + @"\Images\abstract\" + "timur-kozmenko-VJj70LBdrnM-unsplash.jpg";
 string image3 = Environment.CurrentDirectory + @"\Images\abstract\" + "timur-kozmenko-zxVdi0iEO7M-unsplash.jpg";
 
-ImageCacherConsoleApp.ImageCacher image1Cacher = new ImageCacherConsoleApp.ImageCacher(cache, image1);
-ImageCacherConsoleApp.ImageCacher image2Cacher = new ImageCacherConsoleApp.ImageCacher(cache, image2);
-ImageCacherConsoleApp.ImageCacher image3Cacher = new ImageCacherConsoleApp.ImageCacher(cache, image3);
+ImageCacherConsoleApp.ImageCacher imageCacher = new ImageCacherConsoleApp.ImageCacher(cache);
 
-// First Pass
+try
+{
+    // 1st Pass
+    Console.WriteLine(imageCacher.GetImage(image1));
+    Console.WriteLine(imageCacher.GetImage(image2));
+    Console.WriteLine(imageCacher.GetImage(image3));
 
-Console.WriteLine(image1Cacher.GetImage());
-
-Console.WriteLine(image2Cacher.GetImage());
-
-Console.WriteLine(image2Cacher.GetImage());
-
-// Second Pass
-
-Console.WriteLine(image1Cacher.GetImage());
-
-Console.WriteLine(image2Cacher.GetImage());
-
-Console.WriteLine(image3Cacher.GetImage());
+    // 2nd Pass
+    Console.WriteLine(imageCacher.GetImage(image1));
+    Console.WriteLine(imageCacher.GetImage(image2));
+    Console.WriteLine(imageCacher.GetImage(image3));
+}
+catch (Exception ex)
+{
+    // Do something
+}
