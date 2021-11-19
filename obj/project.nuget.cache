@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "ZWL2eI0Kswf+AxbV3P4N2NoSpccmGtJyEMX26fXJyuE0qWPr0B22uNyHTqM41HIG8QMn2DscYm4JB+lTsmyIjA==",
+  "dgSpecHash": "Odlo5hD8ApJcIGJDTZtE4ciQsgiS4fGoZ50WkFP1RpaQB4P3zfgW/mTDsad1+wHJgq+GVwkf8DILm5bReEOaRQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\alejandrio.vasay\\Documents\\Visual Studio 2022\\blog 2022\\ProjectCacheSingleton\\ImageCacherConsoleApp\\ImageCacherConsoleApp.csproj",
   "expectedPackageFiles": [
